@@ -1,0 +1,147 @@
+/* Navbar.css */
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999; /* Ensure the navbar is on top of other elements */
+}
+
+/* Apply white font color in dark mode and black font color in light mode */
+.navbar.dark-mode {
+    background-color: #666464;
+    color: #ffffff;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    margin-right: 20px;
+    font-weight: bold;
+    color: ${darkMode ? "#ffffff" : "#000000"};
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+ 
+}
+
+.navbar-links a {
+    color: black; /* Updated to white in dark mode, black in light mode */
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:last-child {
+    margin-right: 10;
+    margin-bottom: 10;
+}
+
+.navbar-links a:hover {
+    color: hsl(0, 0%, 1%)
+}
+
+/* Add this CSS to your Navbar.css file */
+.dark-mode-toggle {
+    background-color: #306091;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+  }
+  
+  .toggle-label {
+    display: inline-block;
+    transition: opacity 0.3s ease;
+  }
+  
+  .dark-mode-toggle.dark-mode {
+    background-color: #414141;
+  }
+  
+  .dark-mode-toggle.dark-mode .toggle-label {
+    opacity: 0;
+  }
+  
+  .dark-mode-toggle.dark-mode .fa-sun {
+    transform: translateX(26px);
+  }
+  
+  .dark-mode-toggle.dark-mode .fa-moon {
+    transform: translateX(-26px);
+  }
+  
+
+.dark-mode-toggle:hover {
+    background-color: #0056b3;
+}
+
+/* Rest of the page styles */
+.container {
+    margin-top: 70px; /* Add a margin to create space below the fixed navbar */
+}
+
+/* Add any other styles for the movable content here */
+.navbar-brand {
+    font-size: 2rem; /* Increase font size */
+    margin-right: 20px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", sans-serif; /* Choose a stylish and professional font-family */
+    color: ${darkMode ? "#ffffff" : "#000000"};
+}
+
+/* Add laser effect on links in dark mode */
+.navbar.dark-mode .navbar-links a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar.dark-mode .navbar-links a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #ffffff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar.dark-mode .navbar-links a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+/* Add this CSS to your Navbar.css file */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Add any additional styling as needed */
+  }
+  
+  .navbar-logo img {
+    height: 40px; /* Adjust the height as per your image size */
+    width: auto;
+  }
+  

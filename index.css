@@ -1,0 +1,16 @@
+/* Styles for the entire document's body */
+body::before {
+  content: ""; /* Pseudo-elements require the content property, even if empty */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Styles for <code> elements */
+code::before {
+  content: ""; /* Pseudo-elements require the content property, even if empty */
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
