@@ -1,6 +1,6 @@
 # weatherApp ![Javatpoint](https://cdn-icons-png.flaticon.com/128/831/831268.png)  
 The Weather App is a dynamic web application that allows users to fetch weather data for different cities and countries. It provides real-time weather information, temperature conversion between Celsius and Fahrenheit, and the ability to mark favorite cities. Users can sign in and out to save their preferences.
-![alt text for screen readers](https://drive.google.com/file/d/1vcntOPARrWASUwq_UmQTSSwkSGsamcyY/view?usp=sharing).
+![Screenshot (13)](https://github.com/saqlainkhan1904/weatherApp/assets/78788519/8dc69d86-2b15-42f4-b53f-0a1d74c34ef0)
 
 # Features
 * Fetch dynamic weather data from an external API.
